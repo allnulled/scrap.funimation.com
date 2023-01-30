@@ -9,8 +9,29 @@
       "version": "1.0.0",
       "license": "ISC",
       "dependencies": {
+        "@json2csv/plainjs": "^6.1.2",
         "http-server": "^14.1.1"
       }
+    },
+    "node_modules/@json2csv/formatters": {
+      "version": "6.1.2",
+      "resolved": "https://registry.npmjs.org/@json2csv/formatters/-/formatters-6.1.2.tgz",
+      "integrity": "sha512-l8i5EdQvHZHrtSgRFEXMkRnIn8CBopT/ecZSIyPKuee9+pm/Sxcb/r/N2jQWARnOQc7uyqQWAtpPpxU7HhZ2tg=="
+    },
+    "node_modules/@json2csv/plainjs": {
+      "version": "6.1.2",
+      "resolved": "https://registry.npmjs.org/@json2csv/plainjs/-/plainjs-6.1.2.tgz",
+      "integrity": "sha512-XNcBd6W4G5mlP6ZL13idEx21diQAM5AJgIe78RxRfZctWRppaZrtpiGTzhc/sNv7UM1FpfO/aa5wel4+aQW7MQ==",
+      "dependencies": {
+        "@json2csv/formatters": "^6.1.2",
+        "@streamparser/json": "^0.0.10",
+        "lodash.get": "^4.4.2"
+      }
+    },
+    "node_modules/@streamparser/json": {
+      "version": "0.0.10",
+      "resolved": "https://registry.npmjs.org/@streamparser/json/-/json-0.0.10.tgz",
+      "integrity": "sha512-juqNFdqqmY/nvsODq1Vba7PWIaqr01VcqICIrxbws97QKSQhQUMml8FqdHLmevwVpqH39H5mVXKFWiWCi1ke0w=="
     },
     "node_modules/ansi-styles": {
       "version": "4.3.0",
@@ -250,6 +271,11 @@
       "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz",
       "integrity": "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg=="
     },
+    "node_modules/lodash.get": {
+      "version": "4.4.2",
+      "resolved": "https://registry.npmjs.org/lodash.get/-/lodash.get-4.4.2.tgz",
+      "integrity": "sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ=="
+    },
     "node_modules/mime": {
       "version": "1.6.0",
       "resolved": "https://registry.npmjs.org/mime/-/mime-1.6.0.tgz",
@@ -401,6 +427,26 @@
     }
   },
   "dependencies": {
+    "@json2csv/formatters": {
+      "version": "6.1.2",
+      "resolved": "https://registry.npmjs.org/@json2csv/formatters/-/formatters-6.1.2.tgz",
+      "integrity": "sha512-l8i5EdQvHZHrtSgRFEXMkRnIn8CBopT/ecZSIyPKuee9+pm/Sxcb/r/N2jQWARnOQc7uyqQWAtpPpxU7HhZ2tg=="
+    },
+    "@json2csv/plainjs": {
+      "version": "6.1.2",
+      "resolved": "https://registry.npmjs.org/@json2csv/plainjs/-/plainjs-6.1.2.tgz",
+      "integrity": "sha512-XNcBd6W4G5mlP6ZL13idEx21diQAM5AJgIe78RxRfZctWRppaZrtpiGTzhc/sNv7UM1FpfO/aa5wel4+aQW7MQ==",
+      "requires": {
+        "@json2csv/formatters": "^6.1.2",
+        "@streamparser/json": "^0.0.10",
+        "lodash.get": "^4.4.2"
+      }
+    },
+    "@streamparser/json": {
+      "version": "0.0.10",
+      "resolved": "https://registry.npmjs.org/@streamparser/json/-/json-0.0.10.tgz",
+      "integrity": "sha512-juqNFdqqmY/nvsODq1Vba7PWIaqr01VcqICIrxbws97QKSQhQUMml8FqdHLmevwVpqH39H5mVXKFWiWCi1ke0w=="
+    },
     "ansi-styles": {
       "version": "4.3.0",
       "resolved": "https://registry.npmjs.org/ansi-styles/-/ansi-styles-4.3.0.tgz",
@@ -567,6 +613,11 @@
       "version": "4.17.21",
       "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz",
       "integrity": "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg=="
+    },
+    "lodash.get": {
+      "version": "4.4.2",
+      "resolved": "https://registry.npmjs.org/lodash.get/-/lodash.get-4.4.2.tgz",
+      "integrity": "sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ=="
     },
     "mime": {
       "version": "1.6.0",
