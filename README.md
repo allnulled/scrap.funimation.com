@@ -10,12 +10,12 @@ Puedes ir directamente a la aplicación de búsqueda a:
 
 ## Explicación
 
-Este scrap está basado en las peticiones `AJAX` del site. Los pasos a seguir (finales, no intermedios) han sido: 
+Este scrap está basado en el `DOM` de una de las páginas del site. Los pasos a seguir para reproducirlo son: 
 
+  - Navegar dentro del site hasta la página de "Todos los títulos".
   - Cargar en pantalla todos los títulos posibles.
-  - Descargar el fichero `.HAR` (un JSON con las peticiones `AJAX` que ha hecho el navegador) con todas las peticiones.
-  - Depurar y unificar los datos interesantes del `.HAR`.
-
-La unificación de estos datos lo hace el script en [`./scripts/script.network.extraction.js`](#), y se terminan teniendo en [`./app/responses.all.js`](#) para que la aplicación en [`./app/app.calo`](#) pueda tomarlos y empaquetarlos en un mismo HTML todo, que finalmente es expuesto en [`./docs/index.html`](#), la aplicación.
-
-
+  - Aplicar el script de *scripts/scrap.general.js* vía consola del navegador.
+  - Copiar y pegar el JSON imprimido por consola en *datos/scrap.general.json*.
+  - Ejecutar el script *scripts/script.to-excel.js* con node.js vía consola del sistema operativo.
+  
+Este último paso debería generar el csv en *datos/funimation.com.csv*.
