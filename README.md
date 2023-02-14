@@ -4,7 +4,7 @@ Scrap del site funimation.com. Más de 830 títulos.
 
 ## Aplicación
 
-Puedes ir directamente a la aplicación de búsqueda a:
+Puedes ir directamente a la aplicación (con datos no actualizados) de búsqueda a:
 
  - [https://allnulled.github.io/scrap.funimation.com](https://allnulled.github.io/scrap.funimation.com/index.html)
 
